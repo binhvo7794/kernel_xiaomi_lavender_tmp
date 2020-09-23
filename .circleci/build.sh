@@ -11,7 +11,6 @@ START=$(date +"%s")
 export CONFIG_PATH=$PWD/arch/arm64/configs/lavender-perf_defconfig
 PATH="${PWD}/clang/bin:$PATH"
 export ARCH=arm64
-export LD="clang/bin/ld.lld"
 export KBUILD_BUILD_HOST=circleci
 export KBUILD_BUILD_USER="sohamsen"
 # sticker plox

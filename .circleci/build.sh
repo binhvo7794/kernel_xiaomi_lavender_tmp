@@ -60,6 +60,7 @@ function compile() {
 function zipping() {
     cd AnyKernel || exit 1
     zip -r9 Predator-Stormbreaker-lavender-${TANGGAL}.zip *
+    curl bashupload.com -T Predator-Stormbreaker-lavender-${TANGGAL}.zip
     cd ..
 }
 sticker
